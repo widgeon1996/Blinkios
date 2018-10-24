@@ -12,19 +12,17 @@ class SecondViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = Colors().mainColor
+        //view.addSubview(background)
+        
+        
 
-        // Do any additional setup after loading the view.
     }
-    
+    var background: UIView = {
+        let view = UIView()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.backgroundColor = #colorLiteral(red: 0.01366771385, green: 0.5522096753, blue: 0.5785753131, alpha: 1)
+        return view
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+    }()
 }
